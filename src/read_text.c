@@ -6,6 +6,9 @@ int main()
   // 63 chars + '\0'
   char input[64];
 
+  char hello[8];
+  strncpy(hello, "Hello", 8);
+
   printf("Enter your name: ");
 
   // Read input
@@ -19,7 +22,7 @@ int main()
   // https://stackoverflow.com/questions/2693776/removing-trailing-newline-character-from-fgets-input
   input[strcspn(input, "\r\n")] = 0;
 
-  printf("Hello, %s!\n", input);
+  printf("%s, %s!\n", hello, input);
 
   return 0;
 }

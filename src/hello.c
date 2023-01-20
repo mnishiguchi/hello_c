@@ -2,8 +2,10 @@
 
 int main()
 {
-  printf("hello world\n");
-  puts("闘魂\n");
+  printf("%s %s %d\n", "hello", "world", 123);
+
+  puts("闘魂");
+  putchar('\n');
 
   return 0;
 }

@@ -2,13 +2,31 @@
 
 int main()
 {
-  float temps[3] = {74.9, 73.3, 75.8};
+  float numbers[3] = {74.9, 73.3, 75.8};
+  float *numbers_ptr;
 
-  printf("Local temperatures\n");
+  // No & needed for an array
 
-  for (int x = 0; x < 3; x++)
+  numbers_ptr = numbers;
+
+  for (int i = 0; i < 3; i++)
   {
-    printf("Station %d: %.1f\n", x, temps[x]);
+    printf("Element %d: %.1f\n", i, numbers[i]);
+  }
+
+  printf("\n");
+
+  for (int i = 0; i < 3; i++)
+  {
+    printf("Element %d: %.1f\n", i, *(numbers_ptr + i));
+  }
+
+  printf("\n");
+
+  for (int i = 0; i < 3; i++)
+  {
+    printf("Element %d: %.1f\n", i, *numbers_ptr);
+    numbers_ptr++;
   }
 
   return 0;

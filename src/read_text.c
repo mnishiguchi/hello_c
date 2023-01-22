@@ -20,7 +20,7 @@ int main()
 
   // Remove a trailing newline character
   // https://stackoverflow.com/questions/2693776/removing-trailing-newline-character-from-fgets-input
-  input[strcspn(input, "\r\n")] = 0;
+  input[strcspn(input, "\r\n")] = '\0';
 
   printf("%s, %s and %s!\n", hello, input, world);
 

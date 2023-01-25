@@ -18,3 +18,5 @@ io_utils.o: io_utils.c
 
 clean:
 	rm -f *.o calc_distance
+
+.PHONEY: all clean

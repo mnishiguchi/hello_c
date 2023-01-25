@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
+#include "io_utils.h"
+
 #define VALUE_MIN -100
 #define VALUE_MAX 100
-
-double get_double(char *prompt, double min, double max);
 
 int main()
 {

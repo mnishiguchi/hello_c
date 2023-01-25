@@ -53,4 +53,5 @@ dkms.conf
 
 tmp
 src/*
+!src/*.h
 !src/*.c

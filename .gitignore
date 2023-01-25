@@ -52,6 +52,11 @@ Mkfile.old
 dkms.conf
 
 tmp
-src/*
-!src/*.h
-!src/*.c
+
+src/basics/*
+!src/basics/*.h
+!src/basics/*.c
+
+src/calc_distance/*
+!src/calc_distance/*.h
+!src/calc_distance/*.c

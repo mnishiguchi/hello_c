@@ -53,16 +53,8 @@ dkms.conf
 
 tmp
 
-src/basics/*
-!src/basics/*.h
-!src/basics/*.c
-
-src/calc_distance/*
-!src/calc_distance/*.h
-!src/calc_distance/*.c
-
-src/who/*
-!src/who/*.h
-!src/who/*.c
+src/**/*
+!src/**/*.h
+!src/**/*.c
 
 !Makefile

@@ -16,7 +16,7 @@ void show_info(struct utmp *record_p)
   printf(" ");
   printf("%-8.8s", record_p->ut_line);
   printf(" ");
-  printf("%10ld", record_p->ut_time);
+  printf("%10d", record_p->ut_time);
   printf(" ");
 #ifdef SHOWHOST
   printf("%s", record_p->ut_host);
